@@ -1,4 +1,4 @@
-<h1 align="center"> pROYECTO BACKEND MYSQL </h1>
+<h1 align="center"> PROYECTO BACKEND MYSQL </h1>
 <p align="center">
    <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
 </p>
