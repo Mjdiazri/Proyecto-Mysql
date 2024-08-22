@@ -26,22 +26,27 @@ export const mostrarCitas = async (req, res) => {
     }
 }
 
-/*
-//Funcion mostrar una cita opcion 1 (Sin mensaje personalizado)
+
+//Funcion mostrar una cita opcion 1 
 export const getCita = async(req, res) =>{
     try {
        const cita = await Citas.findAll({
             where:{id: req.params.id}
        });
+       if(!cita[0]){
+            res.status(404).json({msg:"Cita no encontrada con el ID"})
+            return;
+       }
        res.json(cita);
 
     } catch (error) {
         res.json({msg: error.message});
     }
 }
-*/
 
-//Funcion mostrar una cita opcion 2 (Con mensaje personalizado)
+
+/*
+//Funcion mostrar una cita opcion 2 
 export const getCita = async (req, res) => {
     try {
         const cita = await Citas.findByPk(req.params.id);
@@ -55,6 +60,7 @@ export const getCita = async (req, res) => {
         res.json({msg: error.message});
     }
 }
+*/    
 
 //Funcion modificar cita
 export const modificarCita = async(req, res) =>{
