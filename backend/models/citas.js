@@ -4,7 +4,7 @@ import conectarDb  from "../config/db.js";
 //Importar sequelize
 import { DataTypes } from "sequelize";
 
-const Citas = conectarDb.define('citas',{
+const Citas = conectarDb.define('citas',{ //'Citas nombre de la tabla creada en la base
 
     n_medico: 
     {
